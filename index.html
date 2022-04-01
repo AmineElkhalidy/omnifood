@@ -4,10 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food suscription that will make you eat healty again, 365 days per days. It's tailored to your personal tastes and nutritional needs"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="" />
 
     <link rel="stylesheet" href="./assets/style/style.css" />
 
-    <title>Omnifood</title>
+    <title>Omnifood - Never cook again</title>
   </head>
 
   <body>
@@ -651,10 +663,17 @@
                 first meal is on us!
               </p>
 
-              <form action="#" class="cta-form">
+              <form
+                method="POST"
+                action="#"
+                name="sign-up"
+                class="cta-form"
+                netlify
+              >
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
+                    name="full-name"
                     id="full-name"
                     type="text"
                     placeholder="Your name"
@@ -665,6 +684,7 @@
                 <div>
                   <label for="email">Email address</label>
                   <input
+                    name="email"
                     id="email"
                     type="email"
                     placeholder="me@example.com"
@@ -674,7 +694,7 @@
 
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" required>
+                  <select name="select-where" id="select-where" required>
                     <option value="" selected>Select an option</option>
                     <option value="Friends and family">
                       Friends and family
@@ -686,7 +706,7 @@
                   </select>
                 </div>
 
-                <button class="btn btn--form">Sign up now</button>
+                <button type="submit" class="btn btn--form">Sign up now</button>
               </form>
             </div>
 
