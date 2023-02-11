@@ -384,6 +384,13 @@ strong {
   height: 3.2rem;
   filter: brightness(0);
   opacity: 0.5;
+
+  transition: 0.3s;
+}
+
+.logo:hover {
+  opacity: 1;
+  filter: brightness(100%);
 }
 /* ---------- HOW IT WORKS? ---------- */
 .section-how {
