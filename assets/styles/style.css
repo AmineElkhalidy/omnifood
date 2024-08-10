@@ -2,28 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;1,600&display=swap");
 /* ---------- DESIGN SYSTEM ---------- */
 /*
-
--> Font Sizes & Font Weights
-
 -> Colors
-
--Primary: #e67e22, #cf711f
--Tints: #fdf2e9, #f8d8bd, #fae5d3
--Shades:
--Accents:
--Greys: #555, #333
+Primary: #e67e22, #cf711f
+Tints: #fdf2e9, #f8d8bd, #fae5d3
+Shades:
+Accents:
+Greys: #555, #333
 
 -> Images
-
--Which we got from UNSPLASH
-
--> Shadows
+  Which we got from UNSPLASH
 
 -> Border-radius
-9px => I have used 1rem
- 
--> Whitespace
-
+  9px => I have used 1rem
 */
 
 /* ---------- BASE ---------- */
@@ -37,8 +27,6 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: "Rubik", sans-serif;
-
-  overflow-x: hidden;
 }
 
 body {
@@ -154,7 +142,6 @@ img {
 .heading-tertiary {
   font-weight: 700;
   letter-spacing: -0.75px;
-  /* color: #45260a; */
   color: #333;
 }
 
@@ -211,10 +198,6 @@ strong {
 }
 
 /* ---------- HEADER ---------- */
-.logo-img {
-  height: 2.2rem;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -225,6 +208,10 @@ strong {
 
   height: 8rem;
   padding: 0 4.8rem;
+}
+
+.logo-img {
+  height: 2.2rem;
 }
 
 .sticky .header {
@@ -321,7 +308,7 @@ strong {
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   margin-bottom: 4.8rem;
 }
 
@@ -392,10 +379,10 @@ strong {
   opacity: 1;
   filter: brightness(100%);
 }
+
 /* ---------- HOW IT WORKS? ---------- */
 .section-how {
-  padding-top: 9.6rem;
-  padding-bottom: 9.6rem;
+  padding-block: 9.6rem;
 }
 
 .step-image-box {
@@ -414,26 +401,20 @@ strong {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .step-image-box::before {
   width: 60%;
   /* 60% of parent's width */
   padding-bottom: 60%;
-  border-radius: 50%;
-
   background-color: #fdf2e9;
-
   z-index: -2;
 }
 
 .step-image-box::after {
   width: 45%;
-
-  /* 60% of parent's width */
   padding-bottom: 45%;
-  border-radius: 50%;
-
   background-color: #fae5d3;
   z-index: -1;
 }
